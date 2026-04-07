@@ -1,0 +1,16 @@
+# Compiled classes
+build/
+dist/
+
+# NetBeans project metadata
+nbproject/private/
+nbbuild/
+nbdist/
+
+# Mac junk
+.DS_Store
+__MACOSX/
+
+# General IDE files
+*.class
+*.jar
