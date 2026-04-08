@@ -4,6 +4,8 @@ This repository contains my university project from **2010**, developed as part 
 
 > 📋 The project was an academic assignment and is included here as a record of where I started as a developer.
 
+> 👥 Built in collaboration with **Tomas Gallo**.
+
 ## Running the Project
 
 1. Clone the repository.
@@ -11,21 +13,22 @@ This repository contains my university project from **2010**, developed as part 
 2. Make sure you have **Java** installed. Any version from Java 8 onwards works.
    You can download it from [adoptium.net](https://adoptium.net).
 
-3. Navigate to the `build/classes` folder of the part you want to run:
+3. Navigate to the part you want to run and compile the source files:
 
     ```bash
-    cd part-1/build/classes
+    cd part-1/src
+    javac obligatorio/*.java -d ../out
     # or
-    cd part-2/build/classes
+    cd part-2/src
+    javac obligatorio/*.java -d ../out
     ```
 
 4. Run the program:
 
     ```bash
+    cd ../out
     java obligatorio.Menu
     ```
-
-> The compiled `.class` files are included, so no compilation step is needed.
 
 ## Overview
 
@@ -38,7 +41,6 @@ A console-based insurance management system where users can register clients, po
 ## Features
 
 **Part 1:**
-
 - ☑️ Register a client
 - 📋 Link a policy to the client
 - 📝 Enter three claims against the policy
@@ -46,7 +48,6 @@ A console-based insurance management system where users can register clients, po
 - 📊 Identify the most common claim type (theft vs. collision)
 
 **Part 2:**
-
 - ☑️ Register multiple clients (stored in a list)
 - 📋 Register multiple policies and claims
 - 📝 Cancel (deregister) a policy
@@ -69,11 +70,15 @@ Looking back at this code after 15+ years, a few things stand out:
 - Add unit tests
 - Separate data, logic, and UI into proper layers (MVC)
 - Use interfaces and generics more deliberately
-- Replace the console menu with a proper UI
+- Build a proper UI — something we learned in the following course, Programación II
 - Handle exceptions instead of assuming valid input
 
 ## Preview
 
-![Part 1 Preview](./part-1/preview/part-1.gif)
+### Screenshots
+![Part 1 Preview](./preview/part-1.png)
 
-![Part 2 Preview](./part-2/preview/part-2.gif)
+![Part 2 Preview](./preview/part-2.png)
+
+### Gif 
+![Part 1 Preview](./preview/part-1-video.gif)
